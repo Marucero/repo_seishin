@@ -1,0 +1,283 @@
+/* ============================================================================== */
+
+/* Reset CSS */
+*{
+    margin:0;
+    padding:0;
+}
+
+/* ============================================================================== */
+
+/* Defino fuentes a utilzar */
+.font-dojo{
+    font-family: 'Kaushan Script', cursive;
+}
+
+.font-menu{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-style: normal;
+    font-weight: bold;
+}
+
+/* ============================================================================== */
+/* Estilos: body */
+
+body{
+    display:grid;
+    grid-template-areas: 
+        "cab cab"
+        "mnu bod"
+        "pie pie"
+    ;
+    grid-template-columns: 20vw 80vw;
+    grid-template-rows: 20vh 65vh 15vh;
+}
+
+/* ============================================================================== */
+/* Estilos: cab */
+
+.cab{
+    grid-area: cab;
+    display: flex;
+    flex-flow: row nowrap;
+    background-image: linear-gradient(to right, white 60%, lightcoral);
+    align-items: center;
+    justify-content: space-around;
+    font-size: 25px ;
+}
+
+.cab-it{
+    display:flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.seishinlogo{
+    height: 160px;
+    width: 240px;
+}
+
+/* ============================================================================== */
+/* Estilos: mnu */
+
+.mnu{
+    grid-area: mnu;
+    display:flex;
+    flex-flow: column nowrap;
+    border-radius: 15px;
+    margin:15px;
+    background-color: lightcoral;
+    text-align: center;
+    justify-content: space-around;
+}
+
+ul{
+    margin: 0px auto;
+    list-style-type: none;
+    text-align: center;
+}
+
+li{
+    border: 1px solid black;
+    border-radius: 10px;
+    margin: 10px;
+    padding: 5px;
+    background-color: whitesmoke;
+}
+
+.lnk{
+    margin: 30px;
+    font-size: 20px;
+    font-weight: bold;
+    height: 50px;
+    line-height: 50px;
+}
+
+/* ============================================================================== */
+/* Estilos: bod */
+
+.bod{
+    grid-area: bod;
+    display:inline-block;
+    text-align: justify;
+    margin: 15px;
+    font-size:20px;
+    background-image: url('./images/seiken.jpg');
+    object-fit: cover;
+} 
+
+.bod-cnt{
+    display: flex;
+    flex-flow: row ;
+    justify-content: space-around;
+    justify-self: stretch;
+    margin: 10px;
+    padding: 5x;
+    text-align: justify;
+}
+
+.bod-tit{
+    background-color: crimson;
+    color: white;
+    border-radius: 10px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    font-size:22px;
+}
+
+.bod-img{
+    padding: 5x;
+}
+
+/* ============================================================================== */
+/* Estilos: pie */
+
+.pie{
+    grid-area: pie;
+    display:flex;
+    flex-flow: column nowrap;
+    text-align: center;
+    justify-content: center;
+    padding: 10px 0px;
+    background-color: lightpink;
+}
+
+/* ################################################################################################# */
+/* media query breakpoint 1024 */
+
+@media (max-width:1024px){
+
+    /* ============================================================================== */
+    /* Reset CSS */
+    *{
+        margin:0;
+        padding:0;
+    }
+
+    /* ============================================================================== */
+    /* Estilos: body (mq 1024) */
+
+    body{
+        display: grid;
+        grid-template-areas: 
+            "cab"
+            "mnu"
+            "bod"
+            "pie"
+        ;
+        grid-template-columns: 100vw;
+        grid-template-rows: 20vh 6vh 59vh 15vh;
+    }
+
+    /* ============================================================================== */
+    /* Estilos: cab (mq 1024) */
+
+    .cab{
+        grid-area: cab;
+        display: flex;
+        flex-flow: row nowrap;
+        background-image: linear-gradient(to right, white 60%, lightcoral);
+        align-items: center;
+        justify-content: space-around;
+        font-size: 60% ;
+    }
+
+    .cab-it{
+        display:inline;
+        text-align: center;
+    }
+    
+    .cab-slogan{
+        display:none;
+    }
+
+    .seishinlogo{
+        height: 50%;
+        width: 50%;
+    }
+
+    /* ============================================================================== */
+    /* Estilos: mnu (mq 1024) */
+
+    .mnu{
+        grid-area: mnu;
+        display: inline;
+        border-radius: 2px;
+        margin:2px;
+        background-color: lightcoral;
+        text-align: center;
+        justify-content: space-evenly;
+        }
+    
+        ul{
+            margin: 0px auto;
+            padding: 0px;
+            list-style-type: none;
+            text-align: center;
+            justify-content: space-evenly;
+        }
+        
+        li{
+            display:inline-block;
+            border: 0px;
+            border-radius: 0px;
+            margin: 0px;
+            padding: 0px;
+            background-color: lightcoral;
+        }
+
+        li a{
+            display:block;
+            margin: 3px;
+            color: yellow;
+        }
+
+            
+    .lnk{
+        margin: 50%;
+        font-size: 50%;
+        font-weight: normal;
+        height: 50%;
+        line-height: 50%;
+    }
+    
+    /* ============================================================================== */
+    /* Estilos: bod (mq 1024) */
+
+    .bod{
+        grid-area: bod;
+        display:block ;
+        text-align: justify;
+        margin: 5px;
+        font-size:10px;
+        background-image: url('./images/seiken.jpg');
+        object-fit: cover;
+    } 
+
+    .bod-cnt{
+        display: flex;
+        flex-flow: row ;
+        justify-content: space-around;
+        justify-self: stretch;
+        margin: 5px;
+        padding: 2x;
+        text-align: justify;
+    }
+
+    .bod-tit{
+        background-color: crimson;
+        color: white;
+        border-radius: 5px;
+        height: 20px;
+        line-height: 20px;
+        text-align: center;
+        font-size:12px;
+    }
+
+    .bod-img{
+        display: none;
+        padding: 5x;
+    }
+
+}

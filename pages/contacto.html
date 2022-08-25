@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Seishin Dojo Chajari">
+    <link rel="stylesheet" href="..\css\style.css">
+    <script src="..\scripts\seishin.js"></script>
+    <link rel="icon" type="image/x-icon" href="../images/seishin_logo.jpeg">
+    <title>Seishin Dojo</title>
+</head>
+
+<body>
+    
+    <header>
+
+        <h1 style="text-align:center">Seishin Dojo<br><img src="..\images\seishin_logo.jpeg" alt="Logo Seishin"><br>Karate-do JKA</h1>
+        
+    </header>        
+
+    <hr>
+
+    <div>
+
+        <nav>
+            <ul style="list-style-type: none;">
+                <li style="display: inline;"><a href="../index.html">Inicio</a></li>
+                <li style="display: inline;"><a href="objetivo.html">Objetivo</a></li>
+                <li style="display: inline;"><a href="horarios.html">Horarios</a></li>
+                <li style="display: inline;"><a href="examenes.html">Exámenes</a></li>
+                <li style="display: inline;"><a href="noticias.html">Noticias</a></li>
+                <li style="display: inline;"><a href="">Contacto</a></li>
+            </ul>
+        </nav>
+
+    </div>
+
+    <div>
+        <h2 style="text-align: center;">Contacto</h2>
+    </div>
+    
+    <hr>
+    
+    <center>
+        <div>
+        
+            <div style="display: inline-block; vertical-align:top ;">
+                <img src="../images/yoi.jpg" alt="Yoi"> 
+            </div>
+            
+            <div style="display:inline-block; text-align: center;">
+
+                <form action="link de accion del formulario" method="get" enctype="multipart/form-data">
+
+                    <!-- Ejemplo de Grupo de campos -->
+                    <fieldset>
+                        <legend><strong>Datos personales</strong> </legend>
+                        <br>
+                        <!-- Ejemplos de campos de texto -->
+                        <div>
+                            <label for="nombre"><b>Nombre completo</b></label>
+                            <br>
+                            <input type="text" id="nombre" name="nombre">
+                        </div>
+                        <br>
+                        <div>
+                            <label for="domicilio"><b>Domicilio</b></label>
+                            <br>
+                            <input type="text" id="domicilio" name="domicilio">
+                        </div>
+                        <br>
+                        <div>
+                            <label for="dni"><b>DNI</b></label>
+                            <br>
+                            <input type="text" id="dni" name="dni">
+                        </div>
+                        <br>
+                        <div>
+                            <label for="contraseña"><b>Contraseña</b></label>
+                            <br>
+                            <input type="password" name="contraseña">
+                        </div>
+                        <div>
+                            <p><b>Has practicado algún arte marcial antes?</b></p>
+                            <div>
+                                <span>
+                                    <label for="si">Si</label>
+                                    <input type="radio" id="si" name="practico-antes">
+                                    <label for="no">No</label>
+                                    <input type="radio" id="no" name="practico-antes">
+                                </span>
+                            </div>
+                        </div>
+                        <br>
+                        <div>
+                            <label for="comentarios"><b>Comentarios</b></label>
+                            <br>
+                            <textarea name="comentarios" id="comentarios" cols="30" rows="6"></textarea>
+                        </div>
+                        <br>
+                        <div>
+                            <p><b>Qué te gusta entrenar?</b></p>
+                            <select name="" id="tipo-practica">
+                                <option value="" selected disabled>Selecciona:</option>
+                                <option value="kihon">Kihon (Base)</option>
+                                <option value="kata">Kata (Forma)</option>
+                                <option value="kumite">Kumite (Combate)</option>
+                                <option value="todo">Todo lo anterior</option>
+                            </select>
+                        </div>
+                        <br>
+                        
+                    </fieldset>
+        
+                    <br><br>
+
+                    <div>
+                        <input type="submit" value="Enviar">
+                        <input type="reset" value="Limpiar">
+                    </div>
+                </form>
+
+            </div>
+        
+        </div>
+    </center>
+    
+    <hr>
+
+    <footer style="text-align:center ;">
+    
+        <h4>(c) 2022 Mi Empresa</h4>
+        <p>Domicilio de mi empresa</p>
+        <p>Adicional domicilio</p>
+        <address>
+            <a href="mailto:correo@dominio.com">correo@dominio.com</a>
+        </address>
+                
+    </footer>
+    
+</body>
+
+</html>
