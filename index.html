@@ -16,79 +16,99 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
+    <!-- CSS only (CDN) -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <!-- JavaScript Bundle with Popper (CDN)-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
 </head>
 
-<!-- Cuerpo principal de la página -->
-<body>
-    
-    <!-- Encabezado -->
-    <header class="cab">
+<!-- Utilizando grid bootstrap  -->
+<div class="container-fluid text-center ">
 
-        <div class="cab-it">
+    <!-- encabezado  -->
+    <div class="row cab">
+
+        <!-- logo  -->
+        <div class="col-4 cab-it">
             <img src=".\images\seishin_logo.jpeg" alt="Logo Seishin" class="seishinlogo">
         </div>
 
-        <div class="cab-it font-dojo">
+        <!-- titulo  -->
+        <div class="col-4 cab-it font-dojo">
             <h1>Seishin Dojo</h1>
             <h2>Karate-do JKA</h2>
         </div>
 
-        <div class="cab-it cab-slogan font-dojo">
+        <!-- slogan  -->
+        <div class="col-4 cab-it font-dojo cab-slogan">
             <p>Transformamos lo cotidiano</p>
             <p>en extraordinario</p>
         </div>
-        
-    </header>        
-
-    <!-- Menú de navegación -->
-    <div class="mnu">
-
-        <nav>
-            <ul>
-                <li><a  class="lnk font-menu" href="">Inicio</a></li>
-                <li><a  class="lnk font-menu" href="./pages/objetivo.html">Objetivo</a></li>
-                <li><a  class="lnk font-menu" href="#">Horarios</a></li>
-                <li><a  class="lnk font-menu" href="#">Exámenes</a></li>
-                <li><a  class="lnk font-menu" href="#">Noticias</a></li>
-                <li><a  class="lnk font-menu" href="#">Contacto</a></li>
-            </ul>
-        </nav>
 
     </div>
 
-    <!-- cuerpo principal  -->
-    <div class="bod">
+    <!-- cuerpo  -->
+    <div class="row">
 
-        <h2 class="bod-tit">Inicio</h2>
-        
-        <br>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque odit obcaecati ut eveniet distinctio hic minus eligendi. Inventore labore aut ex recusandae molestiae iusto obcaecati possimus odit, consectetur impedit repellendus?</p>
-        <br>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus possimus temporibus labore distinctio itaque. Ipsam consequatur maiores deleniti voluptatum eum et error, magnam numquam quidem aperiam nam placeat sit facilis.</p>
-        <br>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odit reiciendis labore illo tempora optio doloribus sunt qui voluptatum iste officiis possimus, animi quam consectetur beatae commodi sapiente velit voluptatem! Quidem.</p>
-        <br>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ducimus impedit, illum exercitationem iure sit debitis similique odio quis quod ullam dolor id deserunt, expedita dicta neque delectus temporibus libero ex.</p>
-        <br>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque temporibus quidem blanditiis molestias autem accusantium inventore sed quis perferendis sunt, soluta id consectetur unde laboriosam atque, corrupti at explicabo necessitatibus!</p>
-        <br>
+        <!-- Menú de navegación -->
+        <div class="col-3 mnu">
+
+            <nav>
+                <ul>
+                    <li><a class="lnk font-menu" href="">Inicio</a></li>
+                    <li><a class="lnk font-menu" href="./pages/objetivo.html">Objetivo</a></li>
+                    <li><a class="lnk font-menu" href="#">Horarios</a></li>
+                    <li><a class="lnk font-menu" href="#">Exámenes</a></li>
+                    <li><a class="lnk font-menu" href="#">Noticias</a></li>
+                    <li><a class="lnk font-menu" href="#">Contacto</a></li>
+                </ul>
+            </nav>
+
+        </div>
+
+        <!-- cuerpo principal  -->
+        <div class="col-9 bod justify-content-around">
+
+            <h3 class="bod-tit "><small>Inicio</small></h3>
+            
+            <br>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque odit obcaecati ut eveniet distinctio hic minus eligendi. Inventore labore aut ex recusandae molestiae iusto obcaecati possimus odit, consectetur impedit repellendus?</p>
+            <br>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus possimus temporibus labore distinctio itaque. Ipsam consequatur maiores deleniti voluptatum eum et error, magnam numquam quidem aperiam nam placeat sit facilis.</p>
+            <br>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odit reiciendis labore illo tempora optio doloribus sunt qui voluptatum iste officiis possimus, animi quam consectetur beatae commodi sapiente velit voluptatem! Quidem.</p>
+            <br>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ducimus impedit, illum exercitationem iure sit debitis similique odio quis quod ullam dolor id deserunt, expedita dicta neque delectus temporibus libero ex.</p>
+            <br>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque temporibus quidem blanditiis molestias autem accusantium inventore sed quis perferendis sunt, soluta id consectetur unde laboriosam atque, corrupti at explicabo necessitatibus!</p>
+            <br>
+
+        </div>
 
     </div>
-    
+
     <hr>
+    
+    <!-- pie  -->
+    <div class="row pie">
 
-    <!-- pie -->
-    <footer class="pie">
-    
-        <h4>(c) 2022 Mi Empresa</h4>
-        <p>Domicilio de mi empresa</p>
-        <p>Adicional domicilio</p>
-        <address>
-            <a href="mailto:correo@dominio.com">correo@dominio.com</a>
-        </address>
-                
-    </footer>
-    
-</body>
+        <div class="col-12">
+
+            <footer>
+        
+                <h5>(c) 2022 Mi Empresa</h5>
+                <h6>Domicilio de mi empresa</h6>
+                <h6>Adicional domicilio</h6>
+                <address>
+                    <h6><a href="mailto:correo@dominio.com">correo@dominio.com</a></h6>
+                </address>
+                        
+            </footer>
+
+        </div>
+
+    </div>
+
+</div>
 
 </html>
